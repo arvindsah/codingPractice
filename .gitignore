@@ -10,3 +10,4 @@ allure-results/
 /**/.class
 *.class
 *.project
+bin/
