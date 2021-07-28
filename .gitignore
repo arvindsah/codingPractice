@@ -6,5 +6,7 @@ build/
 allure-results/
 .classpath
 .classpath/
+*.classpath
 /**/.class
 *.class
+*.project
