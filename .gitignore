@@ -7,4 +7,4 @@ allure-results/
 .classpath
 .classpath/
 /**/.class
-.class
+*.class
