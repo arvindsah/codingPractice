@@ -1,0 +1,10 @@
+target/
+test-output/
+.settings
+screenshots/
+build/
+allure-results/
+.classpath
+.classpath/
+/**/.class
+.class
