@@ -14,6 +14,23 @@ abstract class Book {
 	    abstract void display();
 	}
 
+	class MyBook extends Book{
+		int price;
+		public MyBook(String title, String author, int price) {
+			super(title,author);
+			this.title=title;
+			this.author=author;
+			this.price=price;
+					
+		}
+
+		@Override
+		void display() {
+			System.out.println("Title: "+title);
+			System.out.println("Author: "+author);
+			System.out.println("Price: "+price);
+		}
+	}
 	// Declare your class here. Do not use the 'public' access modifier.
 	    // Declare the price instance variable
 	    
@@ -48,3 +65,4 @@ abstract class Book {
 	        book.display();
 	    }
 	}
+		
