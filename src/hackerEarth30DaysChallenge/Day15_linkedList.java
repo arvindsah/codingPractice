@@ -12,7 +12,7 @@ package hackerEarth30DaysChallenge;
 	    }
 	}
 
-	class Day14_linkedLis {
+	class Day15_linkedList {
 
 	    public static  Node insert(Node head,int data) {
 			
