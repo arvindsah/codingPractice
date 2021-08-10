@@ -4,6 +4,8 @@ package hackerEarth30DaysChallenge;
 import java.io.*;
 import java.util.*;
 
+import sun.awt.util.IdentityLinkedList;
+
 public class Day18_QueuesAndStack {
     // Write your code here.
 
@@ -27,6 +29,7 @@ public class Day18_QueuesAndStack {
         // Pop/Dequeue the chars at the head of both data structures and compare them:
         boolean isPalindrome = true;
         for (int i = 0; i < s.length/2; i++) {
+        	System.out.println(p.popCharacter() +""+ p.dequeueCharacter());
             if (p.popCharacter() != p.dequeueCharacter()) {
                 isPalindrome = false;                
                 break;
@@ -39,22 +42,18 @@ public class Day18_QueuesAndStack {
     }
 
 	private Object dequeueCharacter() {
-		// TODO Auto-generated method stub
-		return null;
+		return queue.poll();
 	}
 
 	private Object popCharacter() {
-		// TODO Auto-generated method stub
-		return null;
+		return stack.pop();
 	}
-
+	Queue<Character> queue=new LinkedList<Character>();
 	private void enqueueCharacter(char c) {
-		// TODO Auto-generated method stub
-		
+		queue.add(c);
 	}
-
+	Stack<Character> stack= new Stack<Character>();
 	private void pushCharacter(char c) {
-		// TODO Auto-generated method stub
-		
+		stack.push(c);
 	}
 }
