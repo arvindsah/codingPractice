@@ -4,11 +4,20 @@ package hackerEarth30DaysChallenge;
 import java.io.*;
 import java.util.*;
 
-import sun.awt.util.IdentityLinkedList;
+// learn about queue 
+// linkedlist implements queue iterface
+// queue intercace- add, remove, poll, peek (gets the element which is second fro last)
+//FIFO
+
+
+//Stack - LIFO
+// push and pop
 
 public class Day18_QueuesAndStack {
     // Write your code here.
 
+	
+	
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
