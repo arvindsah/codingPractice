@@ -11,7 +11,7 @@ import java.util.*;
 
 
 //Stack - LIFO
-// push and pop
+// push and pop , peek(second item after pop)
 
 public class Day18_QueuesAndStack {
     // Write your code here.
