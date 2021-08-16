@@ -15,8 +15,17 @@ package hackerEarth30DaysChallenge2;
 	class Day22_BinarySearchTrees{
 
 		public static int getHeight(Node root){
-			return 0;
-	      //Write your code here
+			 int heightLeft = 0;
+			    int heightRight = 0;
+
+			    if (root.left != null) {
+			        heightLeft = getHeight(root.left) + 1;
+			    }
+			    if (root.right != null) {
+			        heightRight = getHeight(root.right) + 1;
+			    }
+
+			  return (heightLeft > heightRight ? heightLeft : heightRight);
 	    }
 
 	    public static Node insert(Node root,int data){
