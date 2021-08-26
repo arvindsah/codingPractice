@@ -19,7 +19,11 @@ package hackerEarth30DaysChallenge2;
 	        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
 	        int N = Integer.parseInt(bufferedReader.readLine().trim());
-
+	        
+	        String emailRegEx = ".+@gmail\\.com$";
+	        Pattern pattern = Pattern.compile(emailRegEx);
+	        List<String> list = new ArrayList();
+	        
 	        IntStream.range(0, N).forEach(NItr -> {
 	            try {
 	                String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
@@ -27,12 +31,20 @@ package hackerEarth30DaysChallenge2;
 	                String firstName = firstMultipleInput[0];
 
 	                String emailID = firstMultipleInput[1];
+	                Matcher matcher=pattern.matcher(emailID);
+	                if(matcher.find()) {
+	                	list.add(firstName);
+	                }
 	            } catch (IOException ex) {
 	                throw new RuntimeException(ex);
 	            }
 	        });
 
 	        bufferedReader.close();
+	        Collections.sort(list);
+	        for (String name : list){
+	            System.out.println(name);
+	        }
 	    }
 	}
 
