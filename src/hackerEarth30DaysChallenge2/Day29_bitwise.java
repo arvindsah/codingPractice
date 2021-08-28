@@ -24,7 +24,16 @@ package hackerEarth30DaysChallenge2;
 
 	    public static int bitwiseAnd(int N, int K) {
 	    // Write your code here
-
+	    	 int finalResult = 0;
+	         for(int i = 1; i < N ; i++){
+	             for(int j = i+1; j <= N ; j++){
+	                 int amp = i&j;
+	                 if(amp < K && amp > finalResult)
+	                     finalResult = amp;                    
+	             } 
+	         } 
+	         System.out.println(finalResult);
+	    	
 	    	return 1;
 	    }
 
