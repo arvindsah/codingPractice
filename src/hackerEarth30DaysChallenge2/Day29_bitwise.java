@@ -12,6 +12,11 @@ package hackerEarth30DaysChallenge2;
 	import static java.util.stream.Collectors.toList;
 
 	class Result {
+		//All possible values of  and  are: A:1, B:2, A&B=0
+		// A:1= 0 1
+		//B:2=  1 0
+		//A&B=  0 0
+		//final answer is 0
 
 	    /*
 	     * Complete the 'bitwiseAnd' function below.
@@ -34,7 +39,7 @@ package hackerEarth30DaysChallenge2;
 	         } 
 	         System.out.println(finalResult);
 	    	
-	    	return 1;
+	    	return finalResult;
 	    }
 
 	}
